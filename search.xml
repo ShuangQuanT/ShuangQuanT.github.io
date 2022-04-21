@@ -18,4 +18,16 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>How to use hexo</title>
+    <url>/2022/04/21/hexo_use/</url>
+    <content><![CDATA[<p>#How<br>测试</p>
+]]></content>
+      <categories>
+        <category>guide</category>
+      </categories>
+      <tags>
+        <tag>-hexo_guide</tag>
+      </tags>
+  </entry>
 </search>

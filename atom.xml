@@ -6,7 +6,7 @@
   <link href="https://shuangquant.github.io/atom.xml" rel="self"/>
   
   <link href="https://shuangquant.github.io/"/>
-  <updated>2022-04-21T00:02:53.329Z</updated>
+  <updated>2022-04-21T03:38:11.395Z</updated>
   <id>https://shuangquant.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to use hexo</title>
+    <link href="https://shuangquant.github.io/2022/04/21/hexo_use/"/>
+    <id>https://shuangquant.github.io/2022/04/21/hexo_use/</id>
+    <published>2022-04-21T03:27:22.000Z</published>
+    <updated>2022-04-21T03:38:11.395Z</updated>
+    
+    <content type="html"><![CDATA[<p>#How<br>测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#How&lt;br&gt;测试&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="guide" scheme="https://shuangquant.github.io/categories/guide/"/>
+    
+    
+    <category term="-hexo_guide" scheme="https://shuangquant.github.io/tags/hexo-guide/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
