@@ -64,4 +64,23 @@
         <tag>-hexo使用</tag>
       </tags>
   </entry>
+  <entry>
+    <title>博客搭建心得</title>
+    <url>/2022/04/21/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="心得"><a href="#心得" class="headerlink" title="#心得"></a>#心得</h2><p>博客的搭建用了一天的时间,确实中间有过无助的感觉,但是总算搭建了个也还行的blog</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="#问题:"></a>#问题:</h4><p>​	从开始的小白,到进阶的小白,对应问题的,开始的收集资料,到后面的问题的解决,</p>
+<p>其实遇到了很多的问题,花费了很多的时间和精力在这个blog上面,归结原因</p>
+<p><em><strong>第一</strong></em>,基础不行,甚至可以说完全为零, <strong>二</strong>,没有从人家的源码出发,全是凭借感觉猛打猛冲,上了想到上面就做上面,不太像话,</p>
+<p><strong>三</strong>,环境:报错后没有很好的平台,来帮助自己,也许是这是新技术,但是其实还是自己的问题,官方文档就在那,不去读,</p>
+<p>,非要想到什么就搞什么,<strong>四</strong>,英语真的很重要,</p>
+<p>格式排版也有问题,</p>
+<h2 id="收获"><a href="#收获" class="headerlink" title="收获:"></a>收获:</h2><p>​	从一个从未,涉及的领域出发,虽然艰辛坎坷,但是也学到了很多,对以后其他相识领域,自己应该可以,理解了,可以直接入手</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+      </categories>
+      <tags>
+        <tag>技术心得</tag>
+      </tags>
+  </entry>
 </search>
