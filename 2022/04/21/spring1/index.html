@@ -4,20 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to use hexo, 生活,旅行,思考,代码">
-    <meta name="description" content="
-#说明:
+    <meta name="keywords" content="spring1, 生活,旅行,思考,代码">
+    <meta name="description" content="初级spring
+用set的方法注入属性:
 
-##两个#文章
-###三个#是三级标题
--列表1(-名字)
-​	a子列表(a)
-###链接:
-““前面是名字,后面是链接
-###插入图片
-​	和链接一样后面是图片链接
-###字体加粗* *可以多个
-###代码块单行用esc下面">
+123456789101112131415161718192021&amp;lt;bean id=&amp;quot;名字&amp;quot; class=&amp;quot;类的位置&amp;quot;&amp;gt;&amp;lt;propert">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -31,7 +22,7 @@
 
     
 
-    <title>How to use hexo | 采桑子</title>
+    <title>spring1 | 采桑子</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -322,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to use hexo</h1>
+                    <h1 class="description center-align post-title">spring1</h1>
                 </div>
             </div>
         </div>
@@ -443,23 +434,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo%E4%BD%BF%E7%94%A8/">
-                                <span class="chip bg-color">-hexo使用</span>
+                            <a href="/tags/spring/">
+                                <span class="chip bg-color">spring</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/hexo%E6%89%8B%E5%86%8C/" class="post-category">
-                                -hexo手册
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -489,41 +471,45 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><h2 id="说明"><a href="#说明" class="headerlink" title="#说明:"></a>#说明:</h2></li>
+                <h1 id="初级spring"><a href="#初级spring" class="headerlink" title="初级spring"></a>初级spring</h1><ul>
+<li><h5 id="用set的方法注入属性"><a href="#用set的方法注入属性" class="headerlink" title="用set的方法注入属性:"></a>用set的方法注入属性:</h5></li>
 </ul>
-<p>##两个#文章</p>
-<p>###三个#是三级标题</p>
-<p>-列表1(-名字)</p>
-<p>​	a子列表(a)</p>
-<p>###链接:</p>
-<p>“<a href=""></a>“前面是名字,后面是链接</p>
-<p>###插入图片</p>
-<p>​	和链接一样后面是图片链接</p>
-<p>###字体加粗* *可以多个</p>
-<p>###代码块单行用esc下面的键的 两个瓢&#96; </p>
-<p>###多行还是多个至少三个(一对)&#96;&#96;&#96;</p>
-<h2 id="最好还是下个typora"><a href="#最好还是下个typora" class="headerlink" title="最好还是下个typora"></a>最好还是下个typora</h2><ul>
-<li><h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置:"></a>主题设置:</h2><ul>
-<li>下载相关主题</li>
-<li>然后去theme下配置相关文件</li>
-<li>然后配置_config.yml文件</li>
-<li>最后是生成tags等标签一般有说明</li>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;名字&quot;</span> <span class="attr">class</span>=<span class="string">&quot;类的位置&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;声明的变量&quot;</span> <span class="attr">vualue</span>=<span class="string">&quot;赋值&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--如何赋值为空--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;whatname&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">null</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--特殊符号--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;nanme&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span></span><br><span class="line">        &lt;![CDATA[可以任意字符]]&gt;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--上面都是默认无参的构造--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--第二种注入命名空间注入--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--原因:对应有多个变量,每次调用都要用property过于繁琐--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--类似cpp,要配命名空间--&gt;</span></span><br><span class="line">    xmlns:p=&quot;http://www.springframework.org/schema/p&quot; <span class="comment">&lt;!--p是命名空间的名字--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">p:name1</span>=<span class="string">&quot;属性&quot;</span> <span class="attr">p:name2</span>=<span class="string">&quot;属性&quot;</span> <span class="attr">.....</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h5 id="通过有参的注入"><a href="#通过有参的注入" class="headerlink" title="通过有参的注入:"></a>通过有参的注入:</h5></li>
 </ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">class</span>=<span class="string">&quot;类的位置&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;变量名字&quot;</span> <span class="attr">value</span>=<span class="string">&quot;属性&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--index来有参构造--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">&quot;数字,来表示第几个参数&quot;</span> <span class="attr">value</span>=<span class="string">&quot;属性&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h5 id="值为空"><a href="#值为空" class="headerlink" title="值为空:"></a>值为空:</h5></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">null</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h5 id="注入外部bean一"><a href="#注入外部bean一" class="headerlink" title="注入外部bean一"></a>注入外部bean一</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">		&lt;!--注入外部类ref--&gt;</span><br><span class="line">&lt;!--dao包下的一个userDao的interface接口和一个userDaoImpl的class--&gt;</span><br><span class="line">&lt;!--UserDao--&gt;</span><br><span class="line"><span class="keyword">package</span> com.company.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserDao</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">update</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;!--UserDaoImpl--&gt;</span><br><span class="line"><span class="keyword">package</span> com.company.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title class_">UserDao</span>&#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">update</span><span class="params">()</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;dao update...&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;!--一个用户类UserService--&gt;</span><br><span class="line"><span class="keyword">package</span> com.company.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.company.dao.UserDao;</span><br><span class="line"><span class="keyword">import</span> com.company.dao.UserDaoImpl;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserService</span> &#123;</span><br><span class="line"><span class="comment">//   public static void main(String[] args) &#123;</span></span><br><span class="line"><span class="comment">//       System.out.println(&quot;service add......&quot;);</span></span><br><span class="line"><span class="comment">//        //原始方式</span></span><br><span class="line"><span class="comment">////        UserDao userDao=new UserDaoImpl();</span></span><br><span class="line"><span class="comment">////       userDao.update();</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setUserDao</span><span class="params">(UserDao userDao)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.userDao = userDao;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;service add....&quot;</span>);</span><br><span class="line">        userDao.update();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
 </li>
-<li><h2 id="How-to-write"><a href="#How-to-write" class="headerlink" title="How  to write:"></a>How  to write:</h2><ul>
-<li><code>hexo new或者n name</code>会自动生成到文件source&#x2F;_posts文件里面</li>
-<li>或者直接去文件夹里面生成,最好还是命令</li>
-<li>然后编辑文件tags: 标签名字</li>
-<li>categories: 分类名字</li>
-<li>——线后面正文</li>
-<li></li>
+<li><h5 id="外部注入bean二"><a href="#外部注入bean二" class="headerlink" title="外部注入bean二"></a>外部注入bean二</h5></li>
 </ul>
-</li>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.company.service.UserService&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--ref可以用其它的bean对象--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;userDao&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--    这里实现的是接口只能找接口的实现类--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.company.dao.UserDaoImpl&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h5 id="外部注入bean三"><a href="#外部注入bean三" class="headerlink" title="外部注入bean三"></a>外部注入bean三</h5></li>
 </ul>
-<p>hexo generate  &#x2F;&#x2F;静态文件<br>hexo server  &#x2F;&#x2F;浏览静态文件<br>hexo deploy  &#x2F;&#x2F;同步到博客</p>
-<p>密码为动态API</p>
-<p>可以先到hexo 前面线执行hexo clean清除缓存</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.company.TestSpring;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.company.service.UserService;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestBean</span> &#123;</span><br><span class="line">    <span class="meta">@Test</span><span class="comment">//java把所有的方法运行是很费时间的,@Test是运行单个方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testAdd</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="comment">//找到xml文件的位置创建出context</span></span><br><span class="line">        <span class="type">ApplicationContext</span> <span class="variable">context</span> <span class="operator">=</span></span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">ClassPathXmlApplicationContext</span>(<span class="string">&quot;bean2.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//getBean实例化类</span></span><br><span class="line">        UserService userService=context.getBean(<span class="string">&quot;userService&quot;</span>, UserService.class);</span><br><span class="line">        userService.add();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h5 id="内部bean一"><a href="#内部bean一" class="headerlink" title="内部bean一"></a>内部bean一</h5></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//部门</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dept</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String dname;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setDname</span><span class="params">(String dname)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.dname=dname;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//是两个类不是同个类,一个类里面不能两个public  class</span></span><br><span class="line"><span class="comment">//员工</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Emp</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String Ename;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line">    <span class="keyword">private</span> Dept dept;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">setName</span><span class="params">(String Ename)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.Ename=Ename;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">setGender</span><span class="params">(String gender)</span>&#123;</span><br><span class="line">    	<span class="built_in">this</span>.gender=gender;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">setDept</span><span class="params">(Dept dept)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.dept=dept;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h5 id="内部bean二"><a href="#内部bean二" class="headerlink" title="内部bean二"></a>内部bean二</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;emp&quot;</span> <span class="attr">class</span>=<span class="string">&quot;文件地址&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--设置两个普通值--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;lucy&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;女&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--第三个是对象类属性--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--方法一:内部bean,ref--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dept&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--嵌套一个bean类型属性--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;dept&quot;</span> <span class="attr">class</span>=<span class="string">&quot;路径地址&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;属性名字&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--这有个让我无法接受的是写在中间默认有value--&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
                 
             </div>
@@ -550,7 +536,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shuangquant.github.io/2022/04/21/hexo_use/">https://shuangquant.github.io/2022/04/21/hexo_use/</a>
+                    <a href="https://shuangquant.github.io/2022/04/21/spring1/">https://shuangquant.github.io/2022/04/21/spring1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,8 +574,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo%E4%BD%BF%E7%94%A8/">
-                                    <span class="chip bg-color">-hexo使用</span>
+                                <a href="/tags/spring/">
+                                    <span class="chip bg-color">spring</span>
                                 </a>
                             
                         </div>
@@ -763,66 +749,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/21/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/">
+                <a href="/2022/04/21/spring1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="博客搭建心得">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="spring1">
                         
-                        <span class="card-title">博客搭建心得</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-21
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%BF%83%E5%BE%97/" class="post-category">
-                                    心得
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%8A%80%E6%9C%AF%E5%BF%83%E5%BE%97/">
-                        <span class="chip bg-color">技术心得</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/04/21/Hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">spring1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -842,6 +780,64 @@
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/spring/">
+                        <span class="chip bg-color">spring</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/21/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="博客搭建心得">
+                        
+                        <span class="card-title">博客搭建心得</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BF%83%E5%BE%97/" class="post-category">
+                                    心得
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E5%BF%83%E5%BE%97/">
+                        <span class="chip bg-color">技术心得</span>
+                    </a>
+                    
                 </div>
                 
             </div>
