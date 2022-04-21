@@ -6,7 +6,7 @@
   <link href="https://shuangquant.github.io/atom.xml" rel="self"/>
   
   <link href="https://shuangquant.github.io/"/>
-  <updated>2022-04-21T04:06:37.528Z</updated>
+  <updated>2022-04-21T04:25:54.775Z</updated>
   <id>https://shuangquant.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://shuangquant.github.io/2022/04/21/hexo_use/"/>
     <id>https://shuangquant.github.io/2022/04/21/hexo_use/</id>
     <published>2022-04-21T03:27:22.000Z</published>
-    <updated>2022-04-21T04:06:37.528Z</updated>
+    <updated>2022-04-21T04:25:54.775Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><h2 id="说明"><a href="#说明" class="headerlink" title="#说明:"></a>#说明:</h2></li></ul><p>##两个#文章</p><p>###三个#是三级标题</p><p>-列表1(-名字)</p><p>​a子列表(a)</p><p>###链接:</p><p>“<a href=""></a>“前面是名字,后面是链接</p><p>###插入图片</p><p>​和链接一样后面是图片链接</p><p>###字体加粗* *可以多个</p><p>###代码块单行用esc下面的键的 两个瓢&#96; </p><p>###多行还是多个至少三个(一对)&#96;&#96;&#96;</p><h2 id="最好还是下个typora"><a href="#最好还是下个typora" class="headerlink" title="最好还是下个typora"></a>最好还是下个typora</h2><ul><li><h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置:"></a>主题设置:</h2><ul><li>下载相关主题</li><li>然后去theme下配置相关文件</li><li>然后配置_config.yml文件</li><li>最后是生成tags等标签一般有说明</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><h2 id="说明"><a href="#说明" class="headerlink" title="#说明:"></a>#说明:</h2></li></ul><p>##两个#文章</p><p>###三个#是三级标题</p><p>-列表1(-名字)</p><p>​a子列表(a)</p><p>###链接:</p><p>“<a href=""></a>“前面是名字,后面是链接</p><p>###插入图片</p><p>​和链接一样后面是图片链接</p><p>###字体加粗* *可以多个</p><p>###代码块单行用esc下面的键的 两个瓢&#96; </p><p>###多行还是多个至少三个(一对)&#96;&#96;&#96;</p><h2 id="最好还是下个typora"><a href="#最好还是下个typora" class="headerlink" title="最好还是下个typora"></a>最好还是下个typora</h2><ul><li><h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置:"></a>主题设置:</h2><ul><li>下载相关主题</li><li>然后去theme下配置相关文件</li><li>然后配置_config.yml文件</li><li>最后是生成tags等标签一般有说明</li></ul></li><li><h2 id="How-to-write"><a href="#How-to-write" class="headerlink" title="How  to write:"></a>How  to write:</h2><ul><li><code>hexo new或者n name</code>会自动生成到文件source&#x2F;_posts文件里面</li><li>或者直接去文件夹里面生成,最好还是命令</li><li>然后编辑文件tags: 标签名字</li><li>categories: 分类名字</li><li>——线后面正文</li><li></li></ul></li></ul><p>hexo generate  &#x2F;&#x2F;静态文件<br>hexo server  &#x2F;&#x2F;浏览静态文件<br>hexo deploy  &#x2F;&#x2F;同步到博客</p><p>密码为动态API</p><p>可以先到hexo 前面线执行hexo clean清除缓存</p>]]></content>
     
     
       
