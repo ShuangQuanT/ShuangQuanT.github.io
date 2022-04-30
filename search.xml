@@ -65,6 +65,11 @@
       </tags>
   </entry>
   <entry>
+    <title>post_name</title>
+    <url>/2022/04/25/post-name/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>spring1</title>
     <url>/2022/04/21/spring1/</url>
     <content><![CDATA[<h1 id="初级spring"><a href="#初级spring" class="headerlink" title="初级spring"></a>初级spring</h1><h2 id="用set的方法注入属性"><a href="#用set的方法注入属性" class="headerlink" title="用set的方法注入属性:"></a>用set的方法注入属性:</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;名字&quot;</span> <span class="attr">class</span>=<span class="string">&quot;类的位置&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;声明的变量&quot;</span> <span class="attr">vualue</span>=<span class="string">&quot;赋值&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--如何赋值为空--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;whatname&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">null</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--特殊符号--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;nanme&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span></span><br><span class="line">        &lt;![CDATA[可以任意字符]]&gt;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--上面都是默认无参的构造--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--第二种注入命名空间注入--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--原因:对应有多个变量,每次调用都要用property过于繁琐--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--类似cpp,要配命名空间--&gt;</span></span><br><span class="line">    xmlns:p=&quot;http://www.springframework.org/schema/p&quot; <span class="comment">&lt;!--p是命名空间的名字--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">p:name1</span>=<span class="string">&quot;属性&quot;</span> <span class="attr">p:name2</span>=<span class="string">&quot;属性&quot;</span> <span class="attr">.....</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    </span><br></pre></td></tr></table></figure>
@@ -98,14 +103,9 @@
       </tags>
   </entry>
   <entry>
-    <title>post_name</title>
-    <url>/2022/04/25/post-name/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>spring问题</title>
     <url>/2022/04/23/spring%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="首语-如果你可以解决下面问题-欢迎你和我联系邮箱-115-x68-117-x61-110-103-x71-x61-117-110-x74-x61-110-x67-x40-111-x75-x74-108-111-111-107-x2e-99-x6f-109"><a href="#首语-如果你可以解决下面问题-欢迎你和我联系邮箱-115-x68-117-x61-110-103-x71-x61-117-110-x74-x61-110-x67-x40-111-x75-x74-108-111-111-107-x2e-99-x6f-109" class="headerlink" title="首语: 如果你可以解决下面问题,欢迎你和我联系邮箱&#115;&#x68;&#117;&#x61;&#110;&#103;&#x71;&#x61;&#117;&#110;&#x74;&#x61;&#110;&#x67;&#x40;&#111;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#109;"></a><em><strong>首语</strong></em>: 如果你可以解决下面问题,欢迎你和我联系邮箱<a href="mailto:&#115;&#x68;&#117;&#x61;&#110;&#103;&#x71;&#x61;&#117;&#110;&#x74;&#x61;&#110;&#x67;&#x40;&#111;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#109;">&#115;&#x68;&#117;&#x61;&#110;&#103;&#x71;&#x61;&#117;&#110;&#x74;&#x61;&#110;&#x67;&#x40;&#111;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#109;</a></h1><h2 id="1-周期问题"><a href="#1-周期问题" class="headerlink" title="1.周期问题"></a>1.周期问题</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--bean3.xml配置文件--&gt;</span></span><br><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;order&quot;</span> <span class="attr">class</span>=<span class="string">&quot;Spring5.collectiontype.bean.Order&quot;</span> <span class="attr">init-method</span>=<span class="string">&quot;initMethod&quot;</span>  <span class="attr">destroy-method</span>=<span class="string">&quot;destroyMethod&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;singleton&quot;</span>&gt;</span><span class="comment">&lt;!--init-method执行初始化方法--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;oname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;手机&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;order2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;Spring5.collectiontype.bean.Order&quot;</span> <span class="attr">init-method</span>=<span class="string">&quot;initMethod&quot;</span>  <span class="attr">destroy-method</span>=<span class="string">&quot;destroyMethod&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;prototype&quot;</span>&gt;</span><span class="comment">&lt;!--init-method执行初始化方法--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;oname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;手机&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h1 id="首语-如果你可以解决下面问题-欢迎你和我联系邮箱-115-104-117-x61-x6e-103-113-x61-117-110-x74-97-x6e-103-x40-111-117-x74-108-x6f-111-x6b-46-99-111-x6d"><a href="#首语-如果你可以解决下面问题-欢迎你和我联系邮箱-115-104-117-x61-x6e-103-113-x61-117-110-x74-97-x6e-103-x40-111-117-x74-108-x6f-111-x6b-46-99-111-x6d" class="headerlink" title="首语: 如果你可以解决下面问题,欢迎你和我联系邮箱&#115;&#104;&#117;&#x61;&#x6e;&#103;&#113;&#x61;&#117;&#110;&#x74;&#97;&#x6e;&#103;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#111;&#x6b;&#46;&#99;&#111;&#x6d;"></a><em><strong>首语</strong></em>: 如果你可以解决下面问题,欢迎你和我联系邮箱<a href="mailto:&#115;&#104;&#117;&#x61;&#x6e;&#103;&#113;&#x61;&#117;&#110;&#x74;&#97;&#x6e;&#103;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#111;&#x6b;&#46;&#99;&#111;&#x6d;">&#115;&#104;&#117;&#x61;&#x6e;&#103;&#113;&#x61;&#117;&#110;&#x74;&#97;&#x6e;&#103;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#111;&#x6b;&#46;&#99;&#111;&#x6d;</a></h1><h2 id="1-周期问题"><a href="#1-周期问题" class="headerlink" title="1.周期问题"></a>1.周期问题</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--bean3.xml配置文件--&gt;</span></span><br><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;order&quot;</span> <span class="attr">class</span>=<span class="string">&quot;Spring5.collectiontype.bean.Order&quot;</span> <span class="attr">init-method</span>=<span class="string">&quot;initMethod&quot;</span>  <span class="attr">destroy-method</span>=<span class="string">&quot;destroyMethod&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;singleton&quot;</span>&gt;</span><span class="comment">&lt;!--init-method执行初始化方法--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;oname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;手机&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;order2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;Spring5.collectiontype.bean.Order&quot;</span> <span class="attr">init-method</span>=<span class="string">&quot;initMethod&quot;</span>  <span class="attr">destroy-method</span>=<span class="string">&quot;destroyMethod&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;prototype&quot;</span>&gt;</span><span class="comment">&lt;!--init-method执行初始化方法--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;oname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;手机&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//对象</span></span><br><span class="line"><span class="keyword">package</span> Spring5.collectiontype.bean;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Order</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String oname;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Order</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第一步执行无参数的构造,创建bean的实例&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setOname</span><span class="params">(String oname)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.oname = oname;</span><br><span class="line">        System.out.println(<span class="string">&quot;第二步调用set方法,设置值&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">initMethod</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第三步 执行初始化的方法&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">destroyMethod</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第五步 执行销毁的方法&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -117,25 +117,6 @@
       </categories>
       <tags>
         <tag>Spring问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建心得</title>
-    <url>/2022/04/21/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h2 id="心得"><a href="#心得" class="headerlink" title="#心得"></a>#心得</h2><p>博客的搭建用了一天的时间,确实中间有过无助的感觉,但是总算搭建了个也还行的blog</p>
-<h4 id="问题"><a href="#问题" class="headerlink" title="#问题:"></a>#问题:</h4><p>​	从开始的小白,到进阶的小白,对应问题的,开始的收集资料,到后面的问题的解决,</p>
-<p>其实遇到了很多的问题,花费了很多的时间和精力在这个blog上面,归结原因</p>
-<p><em><strong>第一</strong></em>,基础不行,甚至可以说完全为零, <strong>二</strong>,没有从人家的源码出发,全是凭借感觉猛打猛冲,想到什么就做什么,不太像话,</p>
-<p><strong>三</strong>,环境:报错后没有很好的平台,来帮助自己,也许是这是新技术,但是其实还是自己的问题,官方文档就在那,不去读,</p>
-<p>,非要想到什么就搞什么,<strong>四</strong>,英语真的很重要,</p>
-<p>格式排版也有问题,</p>
-<h2 id="收获"><a href="#收获" class="headerlink" title="收获:"></a>收获:</h2><p>​	从一个从未,涉及的领域出发,虽然艰辛坎坷,但是也学到了很多,对以后其他相识领域,自己应该可以,理解了,可以直接入手</p>
-]]></content>
-      <categories>
-        <category>心得</category>
-      </categories>
-      <tags>
-        <tag>技术心得</tag>
       </tags>
   </entry>
   <entry>
@@ -167,6 +148,41 @@
       </categories>
       <tags>
         <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建心得</title>
+    <url>/2022/04/21/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="心得"><a href="#心得" class="headerlink" title="#心得"></a>#心得</h2><p>博客的搭建用了一天的时间,确实中间有过无助的感觉,但是总算搭建了个也还行的blog</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="#问题:"></a>#问题:</h4><p>​	从开始的小白,到进阶的小白,对应问题的,开始的收集资料,到后面的问题的解决,</p>
+<p>其实遇到了很多的问题,花费了很多的时间和精力在这个blog上面,归结原因</p>
+<p><em><strong>第一</strong></em>,基础不行,甚至可以说完全为零, <strong>二</strong>,没有从人家的源码出发,全是凭借感觉猛打猛冲,想到什么就做什么,不太像话,</p>
+<p><strong>三</strong>,环境:报错后没有很好的平台,来帮助自己,也许是这是新技术,但是其实还是自己的问题,官方文档就在那,不去读,</p>
+<p>,非要想到什么就搞什么,<strong>四</strong>,英语真的很重要,</p>
+<p>格式排版也有问题,</p>
+<h2 id="收获"><a href="#收获" class="headerlink" title="收获:"></a>收获:</h2><p>​	从一个从未,涉及的领域出发,虽然艰辛坎坷,但是也学到了很多,对以后其他相识领域,自己应该可以,理解了,可以直接入手</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+      </categories>
+      <tags>
+        <tag>技术心得</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一行忧悠</title>
+    <url>/2022/04/30/%E4%B8%80%E8%A1%8C%E5%BF%A7%E6%82%A0/</url>
+    <content><![CDATA[<p>##学习心得</p>
+<p>最近的学习,感觉状态不是很好,对于学习知识,有点好高骛远了,基础不牢地动山摇,基础全无,高楼能筑?</p>
+<p>学的知识,不去深入理解,照着敲一遍,有何意义,浪费时间,不要求快,能稳着稳,先理解底层机制,</p>
+<p>不要一心去学什么技术,要转就专一个,不要感觉这个学了,看不下去了,有跳转到下一个项目中</p>
+<p>还是先学好基础,慢慢学习,稳中求胜,</p>
+<h1 id="最近计划"><a href="#最近计划" class="headerlink" title="最近计划:"></a>最近计划:</h1><h2 id="1-先学好数据库理论-MySQL-计算机网络"><a href="#1-先学好数据库理论-MySQL-计算机网络" class="headerlink" title="1 先学好数据库理论+MySQL+计算机网络"></a>1 先学好数据库理论+MySQL+计算机网络</h2>]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>日志</tag>
       </tags>
   </entry>
 </search>
